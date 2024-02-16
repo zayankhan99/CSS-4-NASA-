@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NASA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css" />
+  <script src="main.js"></script>
+  <script src="icon.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon menu-btn"><i class="fa-solid fa-bars"></i></span>
+        <i class="fa-solid fa-bars menu-btn"></i>
+      </button>
+      <a class="navbar-brand d-logo mx-auto" href="#"><img class="brand `" src="images/nasa-logo.svg" alt="" /></a>
+
+      <li class=" explore">
+        <a href="#search-input"><i class="fa-solid fa-magnifying-glass search-icon"></i></a>
+        <a class="nav-link dropdown-toggle head-1" href="#" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Explore
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Home</a></li>
+          <li><a class="dropdown-item" href="#">Missions</a></li>
+          <li><a class="dropdown-item" href="#">Humans in Space</a></li>
+          <li><a class="dropdown-item" href="#">Earth & Climate</a></li>
+          <li><a class="dropdown-item" href="#">The Solar System</a></li>
+          <li><a class="dropdown-item" href="#">The Universe</a></li>
+          <li><a class="dropdown-item" href="#">Science</a></li>
+          <li><a class="dropdown-item" href="#">Aeronautics</a></li>
+          <li><a class="dropdown-item" href="#">Technology</a></li>
+          <li><a class="dropdown-item" href="#">Learning Resources</a></li>
+          <li><a class="dropdown-item" href="#">About NASA</a></li>
+          <li><a class="dropdown-item" href="#">Español</a></li>
+        </ul>
+      </li>
+
+      <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+        <form class="d-flex search-input" id="search-input" role="search">
+          <input class="form-control search-bar me-2" type="search" placeholder="Search..." aria-label="Search" />
+        </form>
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle explore explore-h" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Explore
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="#">Missions</a></li>
+              <li><a class="dropdown-item" href="#">Humans in Space</a></li>
+              <li><a class="dropdown-item" href="#">Earth & Climate</a></li>
+              <li><a class="dropdown-item" href="#">The Solar System</a></li>
+              <li><a class="dropdown-item" href="#">The Universe</a></li>
+              <li><a class="dropdown-item" href="#">Science</a></li>
+              <li><a class="dropdown-item" href="#">Aeronautics</a></li>
+              <li><a class="dropdown-item" href="#">Technology</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Learning Resources</a>
+              </li>
+              <li><a class="dropdown-item" href="#">About NASA</a></li>
+              <li><a class="dropdown-item" href="#">Español</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle explore" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              News & Events
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">All NASA News</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Video Series on NASA+</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Podcasts</a></li>
+              <li><a class="dropdown-item" href="#">Blogs</a></li>
+              <li><a class="dropdown-item" href="#">Newsletters</a></li>
+              <li><a class="dropdown-item" href="#">Social Media</a></li>
+              <li><a class="dropdown-item" href="#">Media Resources</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Upcoming Launches & Landings</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Virtual Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle explore" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Multimedia
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">NASA+</a></li>
+              <li><a class="dropdown-item" href="#">Images</a></li>
+              <li><a class="dropdown-item" href="#">NASA TV</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Sounds and Ringtones</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Interactives</a></li>
+              <li><a class="dropdown-item" href="#">NASA Apps</a></li>
+              <li><a class="dropdown-item" href="#">Podcasts</a></li>
+              <li><a class="dropdown-item" href="#">e-Books</a></li>
+              <li><a class="dropdown-item" href="#">STEM Multimedia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link explore" href="#">NASA+ <span class="live">LIVE</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="slider">
+    <img class="col-12 desktop-slider" src="images/slider-1.webp" alt="slider images" />
+
+    <div class="slider-content">
+      <h1 class="s-heading col-sm-7 col-md-8 col-lg-7 col-xl-6 col-xxl-5">
+        Inovation for the Benefits of All
+      </h1>
+      <p class="slider-p col-sm-7 col-md-8 col-lg-7 col-xl-5 col-xxl-4">
+        What NASA develops for exploration has the potential to evolve into
+        other technologies with broader use here on Earth, raising the quality
+        of life for everyone.
+      </p>
+      <button class="btn btn-primary col-xs-12 col-8 col-sm-4 col-md-4 col-lg-2 col-xl-2">
+        Learn More
+      </button>
+    </div>
+    <div class="lines d-flex   ">
+      <div class="spart-1 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <hr />
+        <p>browse</p>
+        <a href="#">2024 Spinoffs<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="spart-2 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <hr />
+        <p>discover</p>
+        <a href="#">Benefits to You <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="spart-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <hr />
+        <p>explore</p>
+        <a href="#">Spinoffs Near You<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm col-md col-lg col-xl col-xxl">
+        <h1 class="h1" style="font-family: public sans-b; color: black; ">
+          Featured News
+        </h1>
+      </div>
+      <div
+        class="col-sm col-md col-lg col-xl col-xxl  text-sm-start text-md-end text-lg-end text-xl-end text-xxl-end ancor-div">
+        <a class="ancor h4">More NASA News<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container">
+
+
+
+    <div class="row">
+      <div class="f-image1 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+        <div class="f-large">
+          <img class="f-img1" src="images/card-1.webp" alt="">
+          <div class="f1-content col-12 ">
+
+            <div class="upper-line">
+              <a href=""><i class="fa-regular fa-newspaper"></i>news release</a>
+            </div>
+            <div class="min-read">
+              <p>5 MIN READ</p>
+            </div>
+            <div class="last-line">
+              <p class="h4">NASA Sets Coverage for Ocean, Atmosphere, Climate Mission</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="f-card2 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+
+        <div class="f-medium ">
+          <img class="f-img2" src="images/card-2.webp" alt="">
+          <div class="f2-content">
+            <div class="upper-line2">
+              <a href=""><i class="fa-regular fa-newspaper"></i>news release</a>
+            </div>
+            <div class="min-read2">
+              <p>5 MIN READ</p>
+            </div>
+            <div class="last-line2">
+              <p class="h4">NASA Sets Coverage for Axiom Mission 3 Departure from Space Station</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="row gap-3 right">
+
+          <div class="f-card3 col-12 ">
+            <img class="f-img3" src="images/card-3.webp" alt="">
+            <div class="f-small1">
+              <div class="f3-content">
+                <div class="upper-line3">
+                  <a href=""><i class="fa-regular fa-newspaper"></i>article</a>
+                </div>
+                <div class="min-read3">
+                  <p>4 MIN READ</p>
+                </div>
+                <div class="last-line3">
+                  <p class="h4">Tiny NASA Cameras to Picture Interaction Between Lander, Moon’s Surface</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="f-card3 col-12 ">
+            <img class="f-img3" src="images/card-4.webp" alt="">
+            <div class="f-small1">
+              <div class="f3-content">
+                <div class="upper-line4">
+                  <a href=""><i class="fa-regular fa-newspaper"></i>article</a>
+                </div>
+                <div class="min-read4">
+                  <p>5 MIN READ</p>
+                </div>
+                <div class="last-line4">
+                  <p class="h4">OpenET Study Helps Water Managers and Farmers Put NASA Data to Work</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 mb-xxl-5 " style="
+    margin-top: 16px;">
+      <div class="row  justify-content-lg-between justify-content-xl-between justify-content-xxl-between">
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 f-article1 d-flex">
+          <div class="f-article-img1 col-xl-4">
+            <img class="fa-img1" src="images/round-1.jpg" alt="">
+          </div>
+          <div class="text">
+            <div class="min-read3">
+              <p>4 MIN READ</p>
+            </div>
+            <div class="">
+              <p class="h6" style="line-height: 20px;">The Iconic Photos from STS-
+                41B: Documenting the First
+                Untethered Spacewalk</p>
+            </div>
+            <div class="article">
+              <a class="article-a" href="#"><i class="fa-solid fa-bookmark icon"></i>article</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 f-article1 d-flex">
+          <div class="f-article-img1 col-xl-4">
+            <img class="fa-img1" src=" images/round-2.webp" alt="">
+          </div>
+          <div class="text">
+            <div class="min-read3">
+              <p>4 MIN READ</p>
+            </div>
+            <div class="">
+              <p class="h6" style="line-height: 20px;">The Iconic Photos from STS-
+                41B: Documenting the First
+                Untethered Spacewalk</p>
+            </div>
+            <div class="article">
+              <a class="article-a" href="#"><i class="fa-solid fa-bookmark icon"></i>article</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 f-article1 d-flex">
+          <div class="f-article-img1 col-xl-4">
+            <img class="fa-img1" src=" images/round-3.webp" alt="">
+          </div>
+          <div class="text">
+            <div class="min-read3">
+              <p>4 MIN READ</p>
+            </div>
+            <div>
+              <p class="h6" style="line-height: 20px;">The Iconic Photos from STS-
+                41B: Documenting the First
+                Untethered Spacewalk</p>
+            </div>
+            <div class="article">
+              <a class="article-a" href="#"><i class="fa-solid fa-bookmark icon"></i>article</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 f-article1 d-flex">
+          <div class="f-article-img1 col-xl-4">
+            <img class="fa-img1" src="images/round-4.webp" alt="">
+          </div>
+          <div class="text">
+            <div class="min-read3">
+              <p>4 MIN READ</p>
+            </div>
+            <div class="">
+              <p class="h6" style="line-height: 20px;">The Iconic Photos from STS-
+                41B: Documenting the First
+                Untethered Spacewalk</p>
+            </div>
+            <div class="article">
+              <a class="article-a" href="#"><i class="fa-solid fa-bookmark icon"></i>article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="part-3">
+    <div class="container center-part">
+      <div class="row row-margin">
+        <div class="l-side  col-12 col-sm-12 col-md-12 col-lg-4 col-xl-5 col-xxl-5">
+          <div class="min-read3 fmin">
+            <p>FEATURED VIDEO</p>
+          </div>
+          <div class="h1 l-head">
+            <p>Building Strength as an Astronaut Fitness Trainer</p>
+          </div>
+          <div class="P">
+            <p>We're building our first robotic moon rover! Join us live
+              Wednesday, Feb. 7, at 3 p.m. EST to chat with VIPER mission
+              experts and get a behind-the-scenes look at the build process.</p>
+          </div>
+          <div class="r-btn">
+            <a class="r-ank  h6">VIPER Mission<i class="fa-solid fa-arrow-right vp"></i></a>
+          </div>
+        </div>
+        <div class="r-side   col-12 col-sm-12 col-md-12 col-lg-8 col-xl-7 col-xxl-7">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ha4mXufQp6c?si=JbDOqABNGLKN5mMc"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container  center-p">
+    <div class="row row-margin">
+      <div class=" left-side  col-12 col-sm-12 col-md-12 col-lg-4 col-xl-5 col-xxl-5">
+        <div class="min-read3 fmin">
+          <p>TODAY</p>
+        </div>
+        <div class="h1 left-head">
+          <p>Image Of The Day</p>
+        </div>
+        <div class="P">
+          <p><span class="sp">NGC 4254 (Webb Image)</span> <br>It’s oh-so-easy to be mesmerized by this spiral galaxy.
+            Follow its clearly defined arms, which are brimming with stars, to its center, where there may be old star
+            clusters and – sometimes – active supermassive black holes. NASA’s James Webb Space Telescope delivered
+            highly detailed scenes of this and other nearby spiral galaxies in a combination of near- and mid-infrared
+            light.</p>
+        </div>
+        <div class="r-btn">
+          <a class="r-ankor  h6">Browse Image Archive<i class="fa-solid fa-arrow-right vp"></i></a>
+        </div>
+      </div>
+      <div class="right-side   col-12 col-sm-12 col-md-12 col-lg-8 col-xl-7 col-xxl-7">
+        <div class="image-back">
+          <img class="right-side-img mx-auto d-flex " src="images/of the day.webp" alt="">
+        </div>
+        <div class="r-btn text-end">
+          <a class="r-ankor  h6">View image<i class="fa-solid fa-arrow-right vp"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="part-5 col-12 mt-5">
+    <img class="color-background" src="images/bg-2.webp" alt="">
+    <div class="color-content">
+      <div class="container c-content">
+
+        <div class="row">
+          <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
+            <div>
+              <p class="planet-heading">Our Changing Planet</p>
+            </div>
+            <div class="c-para fs-6">
+              <p>For more than 50 years, NASA satellites have provided data on Earth's land, water, air, temperature,
+                and climate. NASA's Earth Information Center allows visitors to see how our planet is changing in six
+                key
+                areas: sea level rise and coastal impacts, health and air quality, wildfires, greenhouse gases,
+                sustainable energy, and agriculture.</p>
+            </div>
+            <div class="r-btn">
+              <a class="r-ankor h4  " style="color: white !important;">Start Exploring<i
+                  class="fa-solid fa-arrow-right vp" style="rotate: -45deg;"></i></a>
+            </div>
+          </div>
+
+          <div class="space col-lg-6 col-xl-6 col-xxl-6">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container part-6 mt-5">
+    <div class="row">
+
+      <div class="col-sm col-md col-lg col-xl col-xxl">
+        <h1 class="h1" style="font-family: public sans-b; color: black; ">
+          Latest News
+        </h1>
+      </div>
+      <div
+        class="col-sm col-md col-lg col-xl col-xxl  text-sm-start text-md-end text-lg-end text-xl-end text-xxl-end ancor-div">
+        <a class="ancor h4">More NASA News Releases<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container">
+
+
+
+    <div class="row">
+      <div class="f-image1 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+        <div class="f-large">
+          <img class="f-img1" src="images/col-1.webp" alt="">
+          <div class="f1-content col-12 ">
+
+            <div class="upper-line">
+              <a href=""><i class="fa-regular fa-newspaper"></i>news release</a>
+            </div>
+            <div class="min-read">
+              <p>5 MIN READ</p>
+            </div>
+            <div class="last-line">
+              <p class="h4">NASA Awards Inaugural Grants to
+                Support Emerging Research Institutions</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="f-card2 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+
+        <div class="f-medium ">
+          <img class="f-img2" src="images/col-2.webp" alt="">
+          <div class="f2-content">
+            <div class="upper-line2">
+              <a href=""><i class="fa-regular fa-newspaper"></i>news release</a>
+            </div>
+            <div class="min-read2">
+              <p>5 MIN READ</p>
+            </div>
+            <div class="last-line2">
+              <p class="h4">NASA Launches
+                New Climate
+                Mission to Study
+                Ocean,
+                Atmosphere</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="row gap-3 right">
+
+          <div class="f-card3 col-12 ">
+            <img class="f-img3" src="/images/col-3.webp" alt="">
+            <div class="f-small1">
+              <div class="f3-content">
+                <div class="upper-line3">
+                  <a href=""><i class="fa-regular fa-newspaper"></i>article</a>
+                </div>
+                <div class="min-read3">
+                  <p>1 MIN READ</p>
+                </div>
+                <div class="last-line3">
+                  <p class="h4">NASA Sets
+                    Coverage for
+                    Spacex, Intuitive
+                    Machines First
+                    Moon Mission</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="f-card3 col-12 ">
+            <img class="f-img3" src="/images/of the day.webp" alt="">
+            <div class="f-small1">
+              <div class="f3-content">
+                <div class="upper-line4">
+                  <a href=""><i class="fa-regular fa-newspaper"></i>article</a>
+                </div>
+                <div class="min-read4">
+                  <p>5 MIN READ</p>
+                </div>
+                <div class="last-line4">
+                  <p class="h4">NASA Selects
+                    Agencywide
+                    Acquisition
+                    Support
+                    Services
+                    Contractor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 mb-xxl-5 " style="
+    margin-top: 16px;">
+      <div class="row  latest-round justify-content-lg-between justify-content-xl-between justify-content-xxl-between"
+        style="justify-content: space-between;">
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 f-article1 d-flex">
+          <div class="f-article-img1 col-xl-4">
+            <img class="fa-img1" src="images/circle-1.webp" alt="">
+          </div>
+          <div class="text">
+            <div class="min-read3">
+              <p>3 MIN READ</p>
+            </div>
+            <div class="">
+              <p class="h6" style="line-height: 20px;">Nuevos
+                astronautas de
+                Artemis se
+                gradúan y la
+                NASA hará la
+                cobertura</p>
+            </div>
+            <div class="article">
+              <a class="article-a" href="#"><i class="fa-solid fa-bookmark icon"></i>NEWS RELEASE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 f-article1 d-flex">
+          <div class="f-article-img1 col-xl-4">
+            <img class="fa-img1" src="images/circle-1.webp" alt="">
+          </div>
+          <div class="text">
+            <div class="min-read3">
+              <p>3 MIN READ</p>
+            </div>
+            <div class="">
+              <p class="h6" style="line-height: 20px;">New Artemis
+                Generation
+                Astronauts to
+                Graduate, NASA
+                Sets Coverage</p>
+            </div>
+            <div class="article">
+              <a class="article-a" href="#"><i class="fa-solid fa-bookmark icon"></i>NEWS RELEASE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 f-article1 d-flex">
+          <div class="f-article-img1 col-xl-4">
+            <img class="fa-img1" src="images/circle-3.webp" alt="">
+          </div>
+          <div class="text">
+            <div class="min-read3">
+              <p>3 MIN READ</p>
+            </div>
+            <div>
+              <p class="h6" style="line-height: 20px;">NASA
+                Administrator
+                Announces New
+                Marshall Space
+                Flight Center
+                Director</p>
+            </div>
+            <div class="article">
+              <a class="article-a" href="#"><i class="fa-solid fa-bookmark icon"></i>NEWS RELEASE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 f-article1 d-flex">
+          <div class="f-article-img1 col-xl-4">
+            <img class="fa-img1" src="images/circle-4.webp" alt="">
+          </div>
+          <div class="text">
+            <div class="min-read3">
+              <p>3 MIN READ</p>
+            </div>
+            <div class="">
+              <p class="h6" style="line-height: 20px;">California, Massachusetts Students to Hear from NASA, ESA
+                Astronauts</p>
+            </div>
+            <div class="article">
+              <a class="article-a" href="#"><i class="fa-solid fa-bookmark icon"></i>NEWS RELEASE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="part-7 mt-5">
+    <div class="container ">
+      <div class="row row-margin">
+        <div class="l-side  col-12 col-sm-12 col-md-12 col-lg-4 col-xl-5 col-xxl-5">
+
+          <div class="planet-heading l-head">
+            <p>Explore the Universe from your Inbox</p>
+          </div>
+          <div class="P" style="color: #fff !important;">
+            <p>Stay up-to-date on the latest news from NASA–from Earth to the Moon, the Solar System and beyond.</p>
+            <p style="line-height: 10px;">We will never share your email address. <span class="privacy">
+                Privacy Policy
+              </span></p>
+          </div>
+          <div class="r-btn">
+            <a class="r-ank  h4" style="letter-spacing: 2px;">Sign Up<i class="fa-solid fa-arrow-right vp"></i></a>
+          </div>
+        </div>
+        <div class="r-side   col-12 col-lg-8 col-xl-7 col-xxl-7">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container mt-5" style="padding: auto !important; ">
+    <div class="min-read3 " style="padding: 0% !important;">
+      <p>KEEP EXPLORING</p>
+    </div>
+    <div class="mt-2 mb-3" style="padding: 0% !important;">
+      <h1 class="h1" style="font-family: public sans-b; color: black; ">
+        Discover More Topics From NASA
+      </h1>
+    </div>
+    <div class="row overflow">
+      <div class="f-image1  col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="min-height: 27rem !important;">
+        <div class="f-large">
+          <img class="f-img1" src="images/h1.jpg" alt="">
+          <div class="f1-content col-12 " style="justify-content: end;">
+            <a class="r-ankor  h4" style="color: #fff !important;">Mission<i class="fa-solid fa-arrow-right vp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="f-image1  col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="min-height: 27rem !important;">
+        <div class="f-large">
+          <img class="f-img1" src="images/h2.webp" alt="">
+          <div class="f1-content col-12 " style="justify-content: end;">
+            <a class="r-ankor  h4" style="color: #fff !important;">Humans in Apace<i
+                class="fa-solid fa-arrow-right vp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="f-image1  col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="min-height: 27rem !important;">
+        <div class="f-large">
+          <img class="f-img1" src="images/h3.webp" alt="">
+          <div class="f1-content col-12 " style="justify-content: end;">
+            <a class="r-ankor  h4" style="color: #fff !important;">Black History Month<i
+                class="fa-solid fa-arrow-right vp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="f-image1  col-md-6 col-lg-3 col-xl-3 col-xxl-3" style="min-height: 27rem !important;">
+        <div class="f-large">
+          <img class="f-img1" src="images/h4.jpg" alt="">
+          <div class="f1-content col-12 " style="justify-content: end;">
+            <a class="r-ankor  h4" style="color: #fff !important;">Value of Nasa<i
+                class="fa-solid fa-arrow-right vp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row ">
+        <div class="logo mb-4">
+          <img class="logo-img" src="images/nasa-logo.svg" alt="">
+        </div>
+        <div class="d-flex">
+          <div class="row">
+
+
+
+            <div class="fcol-1 col-8 col-sm-8 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+              <p class="h5 f-heading">The National Aeronautics and Space Administration</p>
+              <p class="gray-color" style="font-size: 15px;">NASA explores the unknown in air and space, innovates for
+                the
+                benefit of humanity, and inspires the world
+                through discovery.</p>
+              <p class="about-nasa" style="color: #fff;">About NASA's Mission</p>
+              <a class="r-ankor  h5" style="color: #fff !important;">Join Us<i
+                  class="fa-solid fa-arrow-right vp"></i></a>
+            </div>
+            <div class="fcol-2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <ul class="f-list">
+                <li>Home</li>
+                <li>News & Events</li>
+                <li>Multimedia</li>
+                <li>NASA+<span class="live live-btn">LIVE</span></li>
+                <li>Missions</li>
+              </ul>
+            </div>
+
+            <div class="fcol-2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <ul class="f-list">
+                <li>Humans in Space</li>
+                <li>Earth & Climate</li>
+                <li>The Solar System</li>
+                <li>The Universe</li>
+                <li>Science</li>
+              </ul>
+            </div>
+            <div class="fcol-2 col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <ul class="f-list">
+                <li>Aeronautics</li>
+                <li>Technology</li>
+                <li>Learning Resources</li>
+                <li>About NASA</li>
+                <li>NASA en Español</li>
+              </ul>
+            </div>
+            <div class="fcol-2 flex-lg-column col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <ul class="f-list">
+                <li style="font-family: public sans-b; font-size: 17px; color: #b9b9bb;">Follow NASA</li>
+                <li>Technology</li>
+                <li class="d-flex ">
+                  <div class="s-icons">
+                    <a class=""><i class="fa-brands fa-facebook-f s-btn"></i></a>
+                  </div>
+                  <div class="s-icons">
+                    <a class=""><i class="fa-brands fa-instagram s-btn"></i></a>
+                  </div>
+                  <div class="s-icons">
+                    <a class=""><i class="fa-brands fa-x-twitter s-btn"></i></a>
+                  </div>
+                  <div class="s-icons">
+                    <a class=""><i class="fa-brands fa-youtube s-btn"></i></a>
+                  </div>
+
+                </li>
+                <li>NASA Newsletters</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="f-line">
+          
+        </div> -->
+        <div class="f-last">
+          <hr class="footer-line">
+          <div class="">
+            <!-- d-flex flex-wrap -->
+            <ul
+              class="f-last-list  justify-content-md-between justify-content-lg-between justify-content-xxl-between justify-content-xl-between">
+              <li class=""><a href="">Sitemap</a></li>
+              <li>For Media</li>
+              <li>Privacy Policy</li>
+              <li>FOIA</li>
+              <li>No FEAR Act</li>
+              <li>Office of the IG</li>
+              <li>Budget & Annual Reports</li>
+              <li>Agency Financial Reports</li>
+              <li>Contact NASA</li>
+              <li>Accessibility</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
